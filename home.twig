@@ -1,0 +1,37 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+<div class="feature-overlay">
+   {{widget('feature', 'featurehome', {"defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
+</div>
+
+<header class="bk-header">
+   <div class="wrapper">
+       <div class="companyheader">
+           {{widget('companyname', 'companyname', {"business": "FUSHI"})|raw}}
+           {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+       </div>
+   </div>
+</header>
+
+<div class="menu-container">
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+</div>
+<div class="canvas">
+    <div class="wrapper clearfix">
+        {{zone('main')|raw}}
+    </div>
+        <footer class="bk-footer">
+        {{widget('companyaddress', 'companyaddress', {})|raw}}
+        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+    </footer>
+</div>
+
+</div>
+
+{% endblock %}
+
