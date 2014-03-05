@@ -141,6 +141,10 @@ hr.line {
     height:1px;
 }
 
+.bk-pt-default-menu header.bk-header .companyheader {
+    padding:50px 0px;
+}
+
 /* ===============================
    4. MENU SECTIONS NAVIGATION
    =============================== */
@@ -276,7 +280,7 @@ hr.line {
 
 .tabletmob-nav {
     display: none;
-    background-color: @color-swatch5;
+    background-color: darken(@color-swatch1,10%);
     @media @tablet {
         display: inline-block;
         width: 100%;
@@ -474,7 +478,7 @@ hr.line {
 }
 
 .widget .extendednavigation ul li.folder .text:hover {
-    color:@color-swatch4;
+    color:@color-swatch1;
 }
 
 .widget .extendednavigation ul li.folder:after {
@@ -559,7 +563,7 @@ header.bk-header {
  .companyheader {
         width:100%;
         float:none;
-        padding:100px 0px;
+        padding:90px 0px;
         .logo, .companyname {
             text-align: center;
             float:none;
@@ -917,7 +921,7 @@ header.bk-header {
 
 footer.bk-footer {
     min-height: 40px;
-    background-color: @color-swatch5;
+    background-color: darken(@color-swatch1,10%);
     padding:1em 0;
     text-align:center;
     margin:20px;
@@ -1579,6 +1583,10 @@ blockquote:before {
 
     .bk-pt-default-menu header.bk-header .companyheader {
         padding:130px 0px;
+    }
+
+    .navbar {
+        display:none;
     }
 }
 
