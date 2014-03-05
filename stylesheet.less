@@ -73,7 +73,7 @@ header.bk-header p {
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 5px;
+  padding: 30px 0 5px;
 }
 
 .widget.feature .feature-bgimg .content {
@@ -134,7 +134,7 @@ header.bk-header p {
 
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
     height:0;
-    padding:150px 0px;
+    padding:120px 0px;
 }
 
 hr.line {
@@ -144,6 +144,50 @@ hr.line {
 .bk-pt-default-menu header.bk-header .companyheader {
     padding:50px 0px;
 }
+
+// Feature Widget
+.widget {
+    &.feature {
+        .feature-bgimg {
+            background-image: image('/images/feature-bg.jpg');
+        }
+    }
+}
+.widget {
+    &.feature {
+        display: table;
+        position:relative;
+        width:100%;
+        overflow: hidden;
+        height: auto;
+        .feature-bgimg {
+            display: table-row;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            min-height: 100px; /* height should be in the media query */
+            .content {
+                min-height: 200px; /* height should be in the media query*/
+                display: table-cell;
+                vertical-align: middle;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                @media @mobile {
+                    padding: 80px 0;
+                }
+                .spare {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 
 /* ===============================
    4. MENU SECTIONS NAVIGATION
@@ -579,11 +623,6 @@ header.bk-header {
             font-size: @font-swatch10-font-size;
                 &:hover {
                     text-decoration: none;
-                }
-                @media @mobile {
-                    font-size: bkscale(@font-swatch10-font-size,0.8);
-                    line-height: bkscale(@font-swatch10-line-height,0.8);
-                    padding-bottom: 20px;
                 }
         } 
 
@@ -1610,10 +1649,11 @@ blockquote:before {
         top:20px;
     }
 
-    header.bk-header .companyheader .companyname a {
-          font-size: bkscale(@font-swatch1-font-size,1);
-          line-height:bkscale(@font-swatch1-line-height,1);
+    .companyheader .companyname a {
+          font-size: bkscale(@font-swatch1-font-size,1.2);
+          line-height:bkscale(@font-swatch1-line-height,1.4);
           padding-bottom:0px;  
+          letter-spacing: 14px;
     }
 
     header.bk-header .companyheader {
@@ -1688,7 +1728,7 @@ blockquote:before {
     }
 
     .widget.feature .feature-bgimg .content {
-        padding: 150px 0px;
+        padding: 80px 0px;
     }
 
     .widget.profile .bk-profile-socialicons {

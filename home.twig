@@ -4,18 +4,18 @@
 {% block content %}
 
 <div class="bk-pt-default">
-            <div class="feature-overlay">
-               {{widget('feature', 'featurehome', {"defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
-            </div>
-
-      <header class="bk-header">
-             <div class="wrapper">
-                     <div class="companyheader">
-                         {{widget('companyname', 'companyname', {"business": "FUSHI"})|raw}}
-                         {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-                     </div>
-             </div>
-      </header>
+  
+      <div class="widget feature">    
+        <div class="feature-bgimg">
+          <div class="content">
+            <span class="spare wrapper">
+                <div class="companyheader">
+                   {{widget('companyname', 'companyname', {"business": "FUSHI"})|raw}}
+                   {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+                </div>
+              </span>
+          </div>
+      </div>
 
       <div class="menu-container">
             {{widget('extendednavigation', 'navigationheader', {})|raw}}
