@@ -4,28 +4,27 @@
 {% block content %}
 
 <div class="bk-pt-default-menu">
+          <div class="navbar">
+            {% if pages|length > 1 %}
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        {% endif %}
+        </div>
     <div class="tabletmob-nav">
         {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
     </div>
 
     <div class="contain">
-        <div class="feature-overlay">
-           {{widget('feature', 'featurehome', {"defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': false})|raw}}
-        </div>
-
-        <header class="bk-header">
-        <div class="navbar">
-        {% if pages|length > 1 %}
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    {% endif %}
-    </div>
-           <div class="wrapper">
-               <div class="companyheader">
+      <div class="widget feature">    
+        <div class="feature-bgimg">
+          <div class="content">
+            <span class="spare wrapper">
+                <div class="companyheader">
                    {{widget('companyname', 'companyname', {"business": "FUSHI"})|raw}}
                    {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-               </div>
-           </div>
-        </header>
+                </div>
+              </span>
+          </div>
+      </div>
     </div>
 
     <div class="menu-container">

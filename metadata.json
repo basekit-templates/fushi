@@ -119,7 +119,7 @@
             "background-color-hover": "darken(@color-swatch1,5%)"
         },
         "font8": {
-            "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "18px",
