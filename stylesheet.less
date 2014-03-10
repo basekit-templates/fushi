@@ -596,7 +596,7 @@ hr.line {
     left: 0;
     z-index: 9999;
     @media @tablet {
-        background: transparent;
+        background: @color-swatch1;
         position: relative;
     }
     ul {
@@ -1634,6 +1634,7 @@ blockquote:before {
 
     .widget.menusections ul li {
         border-bottom:0;
+        padding:0;
     }
 
     .widget.menusections {
@@ -1653,6 +1654,10 @@ blockquote:before {
 
     .navbar {
         display:none;
+    }
+
+    .bk-pt-default-menu .widget .extendednavigation ul li:hover ul {
+        background-color:darken(@color-swatch1,10%);
     }
 }
 
@@ -1772,6 +1777,10 @@ blockquote:before {
 
     .clicktocall a:hover {
         background-color:darken(@color-swatch3,5%);
+    }
+
+    .widget.menu .main .menu-header, .widget.menu .main .menu-subsection-header {
+        padding:0;
     }
 
 }
