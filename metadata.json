@@ -99,8 +99,8 @@
         },
         "font6": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "17px",
-            "font-weight": "400",
+            "font-size": "16px",
+            "font-weight": "300",
             "line-height": "36px",
             "color": "@color-swatch5",
             "color-hover": "@color-swatch1",
@@ -136,9 +136,9 @@
         },
         "font10": {
             "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
-            "font-size": "80px",
+            "font-size": "70px",
             "font-weight": "700",
-            "line-height": "90px",
+            "line-height": "70px",
             "color": "@color-swatch1",
             "letter-spacing": "20px"
         }
