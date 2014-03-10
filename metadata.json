@@ -99,8 +99,8 @@
         },
         "font6": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "16px",
-            "font-weight": "300",
+            "font-size": "17px",
+            "font-weight": "400",
             "line-height": "36px",
             "color": "@color-swatch5",
             "color-hover": "@color-swatch1",
