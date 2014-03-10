@@ -59,27 +59,12 @@ h1, h2, h3, h4, h5, p {
     padding: 0 0 10px;
 }
 
-header.bk-header p {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size;           
-}
-
 .canvas  {
   background-color: @color-swatch1;
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
   padding: 30px 0 5px;
-}
-
-.widget.feature .feature-bgimg .content {
-    display: block;
-    text-align: center;
-    background-color: rgba(0,0,0,0.3);
 }
 
 /* ===============================
@@ -128,10 +113,6 @@ header.bk-header p {
     font-size: @font-swatch8-font-size; 
 }
 
-.widget.feature .feature-bgimg .content h2, .widget.feature .feature-bgimg .content h3 {
-    display:none;
-}
-
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
     height:0;
     padding:80px 0px;
@@ -141,18 +122,6 @@ hr.line {
     height:1px;
 }
 
-.bk-pt-default-menu header.bk-header .companyheader {
-    padding:50px 0px;
-}
-
-// Feature Widget
-.widget {
-    &.feature {
-        .feature-bgimg {
-            background-image: image('/images/feature-bg.jpg');
-        }
-    }
-}
 .widget {
     &.feature {
         display: table;
@@ -160,6 +129,7 @@ hr.line {
         width:100%;
         overflow: hidden;
         height: auto;
+        min-height: 325px;
         .feature-bgimg {
             display: table-row;
             width: 100%;
@@ -177,6 +147,38 @@ hr.line {
                 -webkit-box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 box-sizing: border-box;
+                text-align: center;
+                h2 span {
+                    display: block;
+                    font-family: @font-swatch10-font-family;
+                    font-weight: @font-swatch10-font-weight;
+                    color: @font-swatch10-color;
+                    line-height: @font-swatch10-line-height;
+                    letter-spacing: @font-swatch10-letter-spacing;
+                    font-size: @font-swatch10-font-size;
+                    @media @tablet {
+                        line-height: bkscale(@font-swatch10-line-height, 0.9);
+                        letter-spacing: bkscale(@font-swatch1-letter-spacing, 0.8);
+                        font-size: bkscale(@font-swatch10-font-size, 0.8);
+                    }
+                    @media @mobile {
+                        font-size: bkscale(@font-swatch10-font-size, 0.6);
+                        line-height: bkscale(@font-swatch10-line-height, 0.6);
+                    }
+                &:hover {
+                    text-decoration: none;
+                }
+                }
+                h3 span {
+                    display: block;
+                    font-family: @font-swatch7-font-family;
+                    font-weight: @font-swatch7-font-weight;
+                    color: @font-swatch7-color;
+                    line-height: @font-swatch7-line-height;
+                    letter-spacing: @font-swatch7-letter-spacing;
+                    font-size: @font-swatch7-font-size;
+                    margin: 0.5em 0 0.75em;
+                }
                 @media @mobile {
                     padding: 80px 0;
                 }
@@ -187,10 +189,6 @@ hr.line {
         }
     }
 }
-
-.contain{
-    margin-top:-2px;
-} 
 
 
 /* ===============================
@@ -613,11 +611,6 @@ hr.line {
 
 header.bk-header {
     padding:0;
-    background-repeat: no-repeat;
-    background-position:bottom;
-    background-size:contain;
-    position:absolute;
-    top:0;
     width:100%;
  .companyheader {
         width:100%;
@@ -628,18 +621,6 @@ header.bk-header {
             float:none;
         }
 
-        .companyname a {
-            display: block;
-            font-family: @font-swatch10-font-family;
-            font-weight: @font-swatch10-font-weight;
-            color: @font-swatch10-color;
-            line-height: @font-swatch10-line-height;
-            letter-spacing: @font-swatch10-letter-spacing;
-            font-size: @font-swatch10-font-size;
-                &:hover {
-                    text-decoration: none;
-                }
-        } 
 
     }/* end companyheader */
 
@@ -767,7 +748,7 @@ header.bk-header {
             /* ITEMS */
 
             .menu-items { /* ol */
-                width:100%;
+                width: 100%;
                 li {    /* menu-item */
                     display:block;
                     position: relative;
@@ -1013,9 +994,14 @@ footer.bk-footer {
 
 .widget.profile .bk-profile-socialicons {
     text-align: center;
-    font-size:1em;
+    font-size: 1em;
     font-family:@font-swatch7-font-family;
-    margin:0;
+    margin: 0;
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    top: -80px;
     a {
         text-decoration: none;
         text-indent: -9999px;
@@ -1024,7 +1010,7 @@ footer.bk-footer {
         width: 33px;
         background-size: 18px;
         &:hover {
-        background-color:@color-swatch1;
+            background-color:@color-swatch1;
         }
     }
     span {
