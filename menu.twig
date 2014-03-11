@@ -3,30 +3,22 @@
 
 {% block content %}
 
-<div class="bk-pt-default-menu">
-      <div class="navbar">
-    {% if pages|length > 1 %}
-        {{widget('extendednavigation', 'navigationheader', {})|raw}}
-    {% endif %}
-    </div>
-    <div class="tabletmob-nav">
-        {{widget('extendednavigation', 'tabletmobnavigation', {})|raw}}
-    </div>
-
-    <header class="bk-header">
+<div class="bk-pt-default">
+  <header class="bk-header">
       {{widget('feature', 'featurehome', {"header": "profile", "buttonText":"", "defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50', 'showBtn': true})|raw}}
-       {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
-    </header>
-
-    <div class="canvas">
-        <div class="wrapper clearfix">
-            {{zone('main')|raw}}
-        </div>
-            <footer class="bk-footer">
-        {{widget('companyaddress', 'companyaddress', {})|raw}}
-        {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
-    </footer>
-    </div>
+  </header>
+  <div class="menu-container">
+        {{widget('extendednavigation', 'navigationheader', {})|raw}}
+  </div>
+  <div class="canvas">
+      <div class="wrapper clearfix">
+          {{zone('main')|raw}}
+      </div>
+        <footer class="bk-footer">
+              {{widget('companyaddress', 'companyaddress', {})|raw}}
+              {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+        </footer>
+  </div>
 </div>
 
 {% endblock %}
