@@ -94,23 +94,6 @@ h1, h2, h3, h4, h5, p {
     float:none;
 }
 
-.widget.companyaddress p {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size; 
-}
-
-.widget.profile span {
-    font-family:@font-swatch8-font-family;
-    font-weight: @font-swatch8-font-weight;
-    color:@font-swatch8-color;
-    line-height:@font-swatch8-line-height;
-    letter-spacing: @font-swatch8-letter-spacing;
-    font-size: @font-swatch8-font-size; 
-}
 
 .widget.feature .feature-bgimg .content, .widget.feature .feature-bgimg {
     height:0;
@@ -149,33 +132,21 @@ hr.line {
                 text-align: center;
                 h2 span {
                     display: block;
-                    font-family: @font-swatch10-font-family;
-                    font-weight: @font-swatch10-font-weight;
-                    color: @font-swatch10-color;
-                    line-height: @font-swatch10-line-height;
-                    letter-spacing: @font-swatch10-letter-spacing;
-                    font-size: @font-swatch10-font-size;
                     @media @tablet {
-                        line-height: bkscale(@font-swatch10-line-height, 0.9);
-                        letter-spacing: bkscale(@font-swatch1-letter-spacing, 0.8);
-                        font-size: bkscale(@font-swatch10-font-size, 0.8);
+                        line-height: bkscale(@font-swatch8-line-height, 0.9);
+                        letter-spacing: bkscale(@font-swatch8-letter-spacing, 0.8);
+                        font-size: bkscale(@font-swatch8-font-size, 0.8);
                     }
                     @media @mobile {
-                        font-size: bkscale(@font-swatch10-font-size, 0.6);
-                        line-height: bkscale(@font-swatch10-line-height, 0.6);
+                        font-size: bkscale(@font-swatch8-font-size, 0.6);
+                        line-height: bkscale(@font-swatch8-line-height, 0.6);
                     }
-                &:hover {
-                    text-decoration: none;
-                }
+                    &:hover {
+                        text-decoration: none;
+                    }
                 }
                 h3 span {
                     display: block;
-                    font-family: @font-swatch7-font-family;
-                    font-weight: @font-swatch7-font-weight;
-                    color: @font-swatch7-color;
-                    line-height: @font-swatch7-line-height;
-                    letter-spacing: @font-swatch7-letter-spacing;
-                    font-size: @font-swatch7-font-size;
                     margin: 0.5em 0 0.75em;
                 }
                 @media @mobile {
@@ -280,12 +251,6 @@ hr.line {
 
             a {
                 display: block;
-                font-family:@font-swatch6-font-family;
-                font-size:@font-swatch6-font-size;
-                font-weight: @font-swatch6-font-weight;
-                color: @font-swatch6-color;
-                line-height:@font-swatch6-line-height;
-                letter-spacing: @font-swatch6-letter-spacing;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -407,12 +372,6 @@ hr.line {
                 a {
                     display: block;
                     padding: 0 15px;
-                    font-family: @font-swatch6-font-family;
-                    font-size: @font-swatch6-font-size;
-                    font-weight: @font-swatch6-font-weight;
-                    color: @font-swatch7-color;
-                    line-height: @font-swatch6-line-height;
-                    letter-spacing: @font-swatch6-letter-spacing;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -431,12 +390,6 @@ hr.line {
                     .text {
                         display: block;
                         padding: 0 15px;
-                        font-family: @font-swatch6-font-family;
-                        font-size: @font-swatch6-font-size;
-                        font-weight: @font-swatch6-font-weight;
-                        color: @font-swatch7-color;
-                        line-height: @font-swatch6-line-height;
-                        letter-spacing: @font-swatch6-letter-spacing;
                         position: relative;
                         &:after {
                             content: "\25BC";
@@ -830,22 +783,10 @@ header.bk-header {
                             display: block;
                         }
                         p {    /* item-description */
-                            font-family:@font-swatch5-font-family;
-                            font-size:@font-swatch5-font-size;
-                            font-weight: @font-swatch5-font-weight;
-                            line-height:@font-swatch5-line-height;
-                            color:@font-swatch5-color;
-                            letter-spacing: @font-swatch5-letter-spacing;
                             float: left;
                             padding: 0;
                         }
                         h4 {  /* nutritional-title */
-                            font-family:@font-swatch4-font-family;
-                            font-size:@font-swatch4-font-size;
-                            font-weight: @font-swatch4-font-weight;
-                            line-height:@font-swatch4-line-height;
-                            color: @font-swatch4-color;
-                            letter-spacing: @font-swatch4-letter-spacing;
                             float: left;
                             width: 100%;
                             margin: 0;
@@ -989,11 +930,11 @@ footer.bk-footer {
             width: 93%;
             }
                 p {
-                    font-family:@font-swatch9-font-family;
-                    font-size:@font-swatch9-font-size;
-                    font-weight: @font-swatch9-font-weight;
-                    line-height:@font-swatch9-line-height;
-                    color: @font-swatch9-color;
+                    font-family:@font-swatch5-font-family;
+                    font-size:@font-swatch5-font-size;
+                    font-weight: @font-swatch5-font-weight;
+                    line-height:@font-swatch5-line-height;
+                    color: @font-swatch5-color;
                     letter-spacing: 2px;
                     padding:0px 10px;
                 }
@@ -1188,11 +1129,11 @@ footer.bk-footer {
     form {
         button {
             padding: 10px;
-            color: @font-swatch7-color;
+            color: @font-swatch6-color;
             font-size: @font-swatch6-font-size;
             font-weight: @font-swatch6-font-weight;
             line-height: @font-swatch6-line-height;
-            background-color: @font-swatch7-background-color;
+            background-color: @font-swatch6-background-color;
             border: none;
         }
     }

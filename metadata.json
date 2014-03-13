@@ -119,28 +119,28 @@
             "background-color-hover": "darken(@color-swatch1,5%)"
         },
         "font8": {
+            "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
+            "font-size": "70px",
+            "font-weight": "700",
+            "line-height": "70px",
+            "color": "@color-swatch1",
+            "letter-spacing": "10px"
+        },
+        "font9": {
+            "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
+            "font-size": "18px",
+            "font-weight": "700",
+            "line-height": "26px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "300",
             "line-height": "18px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
-        },
-        "font9": {
-            "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
-            "font-size": "32px",
-            "font-weight": "700",
-            "line-height": "50px",
-            "color": "@color-swatch1",
-            "letter-spacing": "inherit"
-        },
-        "font10": {
-            "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
-            "font-size": "70px",
-            "font-weight": "700",
-            "line-height": "70px",
-            "color": "@color-swatch1",
-            "letter-spacing": "20px"
         }
     }
 }
