@@ -63,7 +63,7 @@
             "font-weight": "700",
             "line-height": "50px",
             "color": "@color-swatch3",
-            "letter-spacing": "10px"
+            "letter-spacing": "5px"
         },
         "font2": {
             "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
@@ -71,7 +71,7 @@
             "font-weight": "700",
             "line-height": "38px",
             "color": "@color-swatch3",
-            "letter-spacing": "10px"
+            "letter-spacing": "5px"
         },
         "font3": {
             "font-family": "\"Cabin\", Geneva, Tahoma, sans-serif",
